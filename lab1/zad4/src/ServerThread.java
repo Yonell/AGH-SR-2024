@@ -16,7 +16,12 @@ public class ServerThread extends Thread{
 
                 InetAddress address = receivePacket.getAddress();
                 int port = receivePacket.getPort();
-                byte[] sendBuffer = "Pong".getBytes();
+                byte[] sendBuffer;
+                if(port == 9877) {
+                    sendBuffer = "Ping Java Udp!".getBytes();
+                }else{
+                    sendBuffer = "Ping Python Udp!".getBytes();
+                }
                 DatagramPacket sendPacket =
                         new DatagramPacket(sendBuffer, sendBuffer.length, address, port);
                 socket.send(sendPacket);

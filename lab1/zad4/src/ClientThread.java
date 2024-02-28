@@ -5,10 +5,10 @@ import java.net.InetAddress;
 
 public class ClientThread extends Thread{
     public void run() {
-        try (DatagramSocket socket = new DatagramSocket()) {
+        try (DatagramSocket socket = new DatagramSocket(9877)) {
 
             InetAddress address = InetAddress.getByName("localhost");
-            byte[] sendBuffer = "Ping".getBytes();
+            byte[] sendBuffer = "Ping Java Udp!".getBytes();
             DatagramPacket sendPacket =
                     new DatagramPacket(sendBuffer, sendBuffer.length, address, 9876);
             socket.send(sendPacket);

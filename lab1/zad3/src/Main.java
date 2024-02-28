@@ -21,12 +21,15 @@ public class Main {
                 Integer integer = byteBuffer.getInt();
                 System.out.println("Received number: " + integer);
 
+                InetAddress address = receivePacket.getAddress();
+                int port = receivePacket.getPort();
+
                 integer++;
                 byteBuffer.rewind();
                 byteBuffer.putInt(integer);
                 byteBuffer.rewind();
                 byte[] sendBuffer = byteBuffer.array();
-                DatagramPacket sendPacket = new DatagramPacket(sendBuffer, sendBuffer.length, InetAddress.getByName("localhost"), 9877);
+                DatagramPacket sendPacket = new DatagramPacket(sendBuffer, sendBuffer.length, address, port);
                 socket.send(sendPacket);
 
             }
