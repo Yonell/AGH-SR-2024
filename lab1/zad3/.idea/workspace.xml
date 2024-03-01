@@ -2,15 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cea3b61c-6ea7-46ee-a230-8006ad4ff335" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/../zad1/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../zad1/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../zad1/src/ClientThread.java" beforeDir="false" afterPath="$PROJECT_DIR$/../zad1/src/ClientThread.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../zad1/src/ServerThread.java" beforeDir="false" afterPath="$PROJECT_DIR$/../zad1/src/ServerThread.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../zad2/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../zad2/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PythonProject/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/PythonProject/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,6 +38,8 @@
       <updated>1709130186163</updated>
       <workItem from="1709130189562" duration="663000" />
       <workItem from="1709132346703" duration="341000" />
+      <workItem from="1709133077399" duration="298000" />
+      <workItem from="1709135727481" duration="46000" />
     </task>
     <servers />
   </component>
