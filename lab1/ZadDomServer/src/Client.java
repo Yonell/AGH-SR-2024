@@ -2,12 +2,17 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.io.PrintWriter;
+import java.net.DatagramPacket;
+import java.net.InetAddress;
 import java.net.Socket;
 
 public class Client extends Thread implements NewMessageObserver{
     private final int id;
     private final MessageManager manager;
     private Socket clientSocket;
+    private int portUDP;
+
+    private InetAddress address;
     private final PrintWriter out;
     private final BufferedReader in;
 
@@ -18,6 +23,10 @@ public class Client extends Thread implements NewMessageObserver{
         this.clientSocket = clientSocket;
         this.out = new PrintWriter(clientSocket.getOutputStream(), true);
         this.in = new BufferedReader(new InputStreamReader(clientSocket.getInputStream()));
+        String stringPort = in.readLine();
+        this.portUDP = Integer.parseInt(stringPort);
+
+        this.address = clientSocket.getInetAddress();
     }
 
     @Override
@@ -40,6 +49,14 @@ public class Client extends Thread implements NewMessageObserver{
                 this.manager.addMessage(new Message(this.id, "text", true, msg.getBytes()));
             }
         }
+    }
+
+    public int getPortUDP() {
+        return portUDP;
+    }
+
+    public InetAddress getAddress() {
+        return address;
     }
 
 }
