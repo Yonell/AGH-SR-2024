@@ -13,9 +13,6 @@ import java.util.Queue;
 
 public  class Main {
 
-    public Main() throws IOException {
-    }
-
     public static void main(String[] args) throws InterruptedException {
         Client client = new Client();
         client.start();

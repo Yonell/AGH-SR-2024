@@ -3,37 +3,45 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.io.PrintWriter;
 import java.net.*;
-import java.nio.ByteBuffer;
 import java.util.ArrayDeque;
 import java.util.Queue;
+import java.util.concurrent.locks.Lock;
+import java.util.concurrent.locks.ReentrantLock;
 
 public class Client extends Thread{
-    static Socket clientSocket = null;
+    static Socket clientSocketTCP = null;
     Queue<String> messageQueue = new ArrayDeque<>();
     static DatagramSocket clientSocketUDP = null;
     static PrintWriter out = null;
     static BufferedReader in = null;
-    private static int clientID;
+    private Lock messageQueueLock = new ReentrantLock(true);
+    private messageWaiter waiterTCP;
+    private messageWaiter waiterUDP;
 
     public void run(){
 
+        //initial communication
         int localport;
+        int clientID;
         try {
-            clientSocket = new Socket("localhost", 12345);
+            clientSocketTCP = new Socket("localhost", 12345);
             clientSocketUDP = new DatagramSocket();
             localport = clientSocketUDP.getLocalPort();
-            out = new PrintWriter(clientSocket.getOutputStream(), true);
-            in = new BufferedReader(new InputStreamReader(clientSocket.getInputStream()));
-            clientID = clientSocket.getInputStream().read();
+            out = new PrintWriter(clientSocketTCP.getOutputStream(), true);
+            in = new BufferedReader(new InputStreamReader(clientSocketTCP.getInputStream()));
+            clientID = clientSocketTCP.getInputStream().read();
             out.println(String.valueOf(localport));
-
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
-        messageWaiter waiterTCP = new messageWaiter(this, in);
-        messageWaiter waiterUDP = new messageWaiter(this, clientSocketUDP);
+
+        //messageWaiters initialization
+        waiterTCP = new messageWaiter(this, in);
+        waiterUDP = new messageWaiter(this, clientSocketUDP);
         waiterUDP.start();
         waiterTCP.start();
+
+        //main loop
         int command;
         while(true){
             System.out.print("Command: ");
@@ -50,6 +58,7 @@ public class Client extends Thread{
                 case 84:
                 case 116:
                     try {
+                        System.out.print("Enter message: ");
                         msg = reader.readLine();
                     } catch (IOException e) {
                         throw new RuntimeException(e);
@@ -59,9 +68,11 @@ public class Client extends Thread{
                     break;
                 case 82:
                 case 114:
+                    messageQueueLock.lock();
                     while(messageQueue.size() != 0){
                         System.out.println(messageQueue.remove());
                     }
+                    messageQueueLock.unlock();
                     break;
                 case 85:
                 case 117:
@@ -75,7 +86,7 @@ public class Client extends Thread{
                         byte[] buf2 = new byte[message.getBytes().length+1];
                         buf2[0] = (byte) clientID;
                         System.arraycopy(message.getBytes(), 0, buf2, 1, message.getBytes().length);
-                        DatagramPacket toSend = null;
+                        DatagramPacket toSend;
                         try {
                             toSend = new DatagramPacket(buf2, message.getBytes().length+1, InetAddress.getByName("localhost"), 12345);
                         } catch (UnknownHostException e) {
@@ -88,10 +99,26 @@ public class Client extends Thread{
                         }
                     }
                     break;
+                case 67:
+                case 99:
+                    deinit();
+                    return;
             }
         }
     }
     public void add_message(String message){
+        messageQueueLock.lock();
         messageQueue.add(message);
+        messageQueueLock.unlock();
+    }
+    private void deinit(){
+        try {
+            clientSocketTCP.close();
+            clientSocketUDP.close();
+            waiterUDP.interrupt();
+            waiterTCP.interrupt();
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
     }
 }

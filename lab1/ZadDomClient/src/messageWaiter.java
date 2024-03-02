@@ -2,6 +2,7 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.net.DatagramPacket;
 import java.net.DatagramSocket;
+import java.net.SocketException;
 
 public class messageWaiter extends Thread{
     private Client parent;
@@ -28,6 +29,8 @@ public class messageWaiter extends Thread{
             while(true) {
                 try {
                     msg = in.readLine();
+                } catch (SocketException e) {
+                    return;
                 } catch (IOException e) {
                     throw new RuntimeException(e);
                 }
@@ -40,6 +43,8 @@ public class messageWaiter extends Thread{
             while(true) {
                 try {
                     socket.receive(received);
+                } catch (SocketException e) {
+                    return;
                 } catch (IOException e) {
                     throw new RuntimeException(e);
                 }

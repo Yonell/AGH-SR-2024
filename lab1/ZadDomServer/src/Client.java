@@ -9,10 +9,10 @@ import java.net.Socket;
 public class Client extends Thread implements NewMessageObserver{
     private final int id;
     private final MessageManager manager;
-    private Socket clientSocket;
-    private int portUDP;
+    private final Socket clientSocket;
+    private final int portUDP;
 
-    private InetAddress address;
+    private final InetAddress address;
     private final PrintWriter out;
     private final BufferedReader in;
 
@@ -43,11 +43,14 @@ public class Client extends Thread implements NewMessageObserver{
             try {
                 msg = in.readLine();
             } catch (IOException e) {
-                throw new RuntimeException(e);
-            } finally {
-                assert msg != null;
-                this.manager.addMessage(new Message(this.id, "text", true, msg.getBytes()));
+                deinit();
+                return;
             }
+            if (msg == null) {
+                deinit();
+                return;
+            }
+            this.manager.addMessage(new Message(this.id, "text", true, msg.getBytes()));
         }
     }
 
@@ -57,6 +60,16 @@ public class Client extends Thread implements NewMessageObserver{
 
     public InetAddress getAddress() {
         return address;
+    }
+
+    public void deinit(){
+        manager.removeObserver(this);
+        try {
+            clientSocket.close();
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
+        System.out.println("Client " + id + " disconnected");
     }
 
 }

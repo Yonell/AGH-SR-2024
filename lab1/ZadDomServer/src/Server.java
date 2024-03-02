@@ -29,7 +29,6 @@ public class Server extends Thread{
                 Socket clientSocket = serverSocketTCP.accept();
                 clientSocket.getOutputStream().write(lastId);
                 Client newClient = new Client(lastId,manager,clientSocket);
-                clients.add(newClient);
                 managerUDP.add_client(newClient);
                 newClient.start();
                 System.out.println("New client: " + lastId);

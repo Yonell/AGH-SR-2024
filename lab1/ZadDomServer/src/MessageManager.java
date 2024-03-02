@@ -54,4 +54,10 @@ public class MessageManager extends Thread {
 
         //messageQueueLock.unlock();
     }
+
+    public void removeObserver(NewMessageObserver toRemove){
+        newMessageObserversLock.lock();
+        newMessageObservers.remove(toRemove);
+        newMessageObserversLock.unlock();
+    }
 }
