@@ -1,0 +1,14 @@
+/
+
+POST        /create_poll
+PUT         /update_poll/{poll_id}
+DELETE      /delete_poll/{poll_id}
+
+POST        /cast_vote/{poll_id}
+PUT         /update_vote/{poll_id}/{vote_id}
+DELETE      /delete_vote/{poll_id}/{vote_id}
+
+GET         /get_polls
+GET         /get_options/{poll_id}
+GET         /get_votes/{poll_id}
+GET         /get_results/{poll_id}
