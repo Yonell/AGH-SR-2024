@@ -42,7 +42,7 @@ def coin_statistics(currency: str) -> HTMLResponse:
             values.append(x)
 
         except:
-            return_val = "<a href=\"http://127.0.0.1:8000/\">back</a><br>Communication error with external services"
+            return_val = "<a href=\"/\">back</a><br>Communication error with external services"
 
             return HTMLResponse(status_code=status.HTTP_500_INTERNAL_SERVER_ERROR, content = return_val)
 
@@ -51,7 +51,7 @@ def coin_statistics(currency: str) -> HTMLResponse:
 
     mean = sum(values)/len(values)
     sd = sum([(values[i]-mean)**2  for i in range(len(values))])/(len(values) - 1) if len(values) > 1 else 0
-    return_val = "<a href=\"http://127.0.0.1:8000/\">back</a><br>" + "STATISTICS FOR " + currency + "<br><br>"\
+    return_val = "<a href=\"/\">back</a><br>" + "STATISTICS FOR " + currency + "<br><br>"\
         "mean: " + str(mean) + " PLN <br>" +\
         "standard deviation: " + str(sd) + " PLN"
     return HTMLResponse(status_code=status.HTTP_200_OK, content=return_val)
@@ -59,7 +59,7 @@ def coin_statistics(currency: str) -> HTMLResponse:
 
 @api.get("/currencies/")
 async def available_currencies() -> HTMLResponse:
-    return_val = "<a href=\"http://127.0.0.1:8000/\">back</a><br>" + "AVAILABLE CURRENCIES: <br><br>"
+    return_val = "<a href=\"/\">back</a><br>" + "AVAILABLE CURRENCIES: <br><br>"
     for i in currencies:
         return_val += i + "<br>"
 
