@@ -18,7 +18,7 @@ def coin_statistics(currency: str) -> HTMLResponse:
     currency = currency.lower()
 
     if currency not in currencies:
-        return HTMLResponse(status_code=status.HTTP_400_BAD_REQUEST, content="Unknown currency")
+        return HTMLResponse(status_code=status.HTTP_400_BAD_REQUEST, content="<a href=\"/\">back</a><br>" +"Unknown currency")
 
     values = []
 
