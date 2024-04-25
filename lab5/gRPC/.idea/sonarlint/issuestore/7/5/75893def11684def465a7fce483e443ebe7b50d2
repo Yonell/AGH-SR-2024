@@ -1,0 +1,148 @@
+
+u
+java:S2293µ"YReplace the type specification in this constructor call with the diamond operator ("<>").(‡„®şÿÿÿÿ
+p
+java:S2293–"YReplace the type specification in this constructor call with the diamond operator ("<>").(Î¡›İ
+p
+java:S2293™"YReplace the type specification in this constructor call with the diamond operator ("<>").(˜ÂŒ–
+u
+java:S2293ú"YReplace the type specification in this constructor call with the diamond operator ("<>").(£‹¿¿ıÿÿÿÿ
+g	java:S117à"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÆÓ¡€
+g	java:S117û	"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÆÓ¡€
+g	java:S117´"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÆÓ¡€
+D
+java:S1604Í"(Make this anonymous inner class a lambda(»¿â—øÿÿÿÿ
+u
+java:S1488™"_Immediately return this expression instead of assigning it to the temporary variable "builder".(«‰Ÿ~
+u
+java:S1488Ÿ	"_Immediately return this expression instead of assigning it to the temporary variable "builder".(«‰Ÿ~
+u
+java:S1488Û"_Immediately return this expression instead of assigning it to the temporary variable "builder".(«‰Ÿ~
+œ
+java:S1186"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(ƒ°‡ıÿÿÿÿ
+J
+java:S1172"/Remove this unused method parameter "registry".(•óÊõÿÿÿÿÿ
+<
+java:S1452M"&Remove usage of generic wildcard type.(Å‡— 
+k	java:S116ä"PRename this field "name_" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¬î²¯øÿÿÿÿ
+i	java:S116Š"NRename this field "id_" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(½Ñ…úøÿÿÿÿ
+l	java:S116–"QRename this field "email_" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¤Ã¸Öúÿÿÿÿ
+h	java:S116½"RRename this field "phones_" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(§¨
+t
+java:S4144Ê"^Update this method so that its implementation is not identical to "getPhonesList" on line 962.(Ï­ò7
+z
+java:S4144Î"dUpdate this method so that its implementation is not identical to "getDefaultInstance" on line 1834.(‚í·{
+C
+java:S1948ä"'Make "name_" transient or serializable.(¬î²¯øÿÿÿÿ
+D
+java:S1948–"(Make "email_" transient or serializable.(¤Ã¸Öúÿÿÿÿ
+s
+java:S3077ä"WUse a thread-safe type; adding "volatile" is not enough to make this field thread-safe.(¬î²¯øÿÿÿÿ
+s
+java:S3077–"WUse a thread-safe type; adding "volatile" is not enough to make this field thread-safe.(¤Ã¸Öúÿÿÿÿ
+L
+java:S1133¶"5Do not forget to remove this deprecated code someday.(ô—Ü×
+>
+java:S1123¶"'Add the missing @Deprecated annotation.(ô—Ü×
+m	java:S116¿"RRename this field "number_" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.( Ï¦œşÿÿÿÿ
+f	java:S116å"PRename this field "type_" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(‚Ÿ™¸
+z
+java:S4144Ü"cUpdate this method so that its implementation is not identical to "getDefaultInstance" on line 824.(ÅÙ°Ô
+E
+java:S1948¿")Make "number_" transient or serializable.( Ï¦œşÿÿÿÿ
+s
+java:S3077¿"WUse a thread-safe type; adding "volatile" is not enough to make this field thread-safe.( Ï¦œşÿÿÿÿ
+b
+java:S6201Ç"FReplace this instanceof check and cast with 'instanceof String string'(õõáÀÿÿÿÿÿ
+b
+java:S6201Ù"FReplace this instanceof check and cast with 'instanceof String string'(õõáÀÿÿÿÿÿ
+W
+java:S1126¬"AReplace this if-then-else statement by a single return statement.(ûÿ½%
+h
+java:S3252˜"QUse static access with "com.google.protobuf.AbstractMessage" for "BuilderParent".(ÔÈı¾
+k	java:S116°"URename this field "bitField0_" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ö»³Ä
+h	java:S116²"RRename this field "number_" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ã¿Ö…
+f	java:S116ú"PRename this field "type_" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(‚Ÿ™¸
+h
+java:S3252¶"QUse static access with "com.google.protobuf.AbstractMessage" for "BuilderParent".(ÔÈı¾
+g
+java:S6201ë"PReplace this instanceof check and cast with 'instanceof PhoneNumber phonenumber'(íÛş¨
+W	java:S125§"<This block of commented-out lines of code should be removed.(““ùûÿÿÿÿ
+R	java:S125¨"<This block of commented-out lines of code should be removed.(¯Ë¶‡
+b
+java:S6201¹"FReplace this instanceof check and cast with 'instanceof String string'(Á¿Ö¨üÿÿÿÿ
+]
+java:S6201Ê"FReplace this instanceof check and cast with 'instanceof String string'(‡ñ÷
+b
+java:S6201ì"FReplace this instanceof check and cast with 'instanceof String string'(õõáÀÿÿÿÿÿ
+b
+java:S6201ş"FReplace this instanceof check and cast with 'instanceof String string'(õõáÀÿÿÿÿÿ
+b
+java:S6201"FReplace this instanceof check and cast with 'instanceof String string'(õõáÀÿÿÿÿÿ
+b
+java:S6201°"FReplace this instanceof check and cast with 'instanceof String string'(õõáÀÿÿÿÿÿ
+W
+java:S1126¬"AReplace this if-then-else statement by a single return statement.(ûÿ½%
+h
+java:S3252	"QUse static access with "com.google.protobuf.AbstractMessage" for "BuilderParent".(ÔÈı¾
+k	java:S116ÿ
+"URename this field "bitField0_" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ö»³Ä
+e	java:S116"PRename this field "name_" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ñœã/
+d	java:S116É"NRename this field "id_" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(—‡Ñ÷
+g	java:S116é"QRename this field "email_" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(’ò¹Ø
+h	java:S116±"RRename this field "phones_" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ö£İ­
+t	java:S116»"YRename this field "phonesBuilder_" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(³×¦Ïşÿÿÿÿ
+h
+java:S3252¼	"QUse static access with "com.google.protobuf.AbstractMessage" for "BuilderParent".(ÔÈı¾
+]
+java:S6201‰
+"FReplace this instanceof check and cast with 'instanceof Person person'(á»¥ø
+h
+java:S3776‘
+"RRefactor this method to reduce its Cognitive Complexity from 22 to the 15 allowed.(äıÊD
+W	java:S125ö
+"<This block of commented-out lines of code should be removed.(““ùûÿÿÿÿ
+R	java:S125÷
+"<This block of commented-out lines of code should be removed.(¯Ë¶‡
+b
+java:S6201ˆ"FReplace this instanceof check and cast with 'instanceof String string'(Á¿Ö¨üÿÿÿÿ
+]
+java:S6201™"FReplace this instanceof check and cast with 'instanceof String string'(‡ñ÷
+b
+java:S6201ğ"FReplace this instanceof check and cast with 'instanceof String string'(Á¿Ö¨üÿÿÿÿ
+]
+java:S6201"FReplace this instanceof check and cast with 'instanceof String string'(‡ñ÷
+E
+java:S1940´")Use the opposite operator ("==") instead.(ÆÕÕûÿÿÿÿ
+B
+java:S1452è"&Remove usage of generic wildcard type.(˜ÏÁ×ıÿÿÿÿ
+h	java:S116˜"RRename this field "people_" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(“Äñ÷
+v
+java:S4144¥"_Update this method so that its implementation is not identical to "getPeopleList" on line 1949.(å²•¤
+z
+java:S4144²"dUpdate this method so that its implementation is not identical to "getDefaultInstance" on line 2574.(›³-
+W
+java:S1126î"AReplace this if-then-else statement by a single return statement.(ûÿ½%
+h
+java:S3252Ú"QUse static access with "com.google.protobuf.AbstractMessage" for "BuilderParent".(ÔÈı¾
+k	java:S116“"URename this field "bitField0_" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ö»³Ä
+g	java:S116•"RRename this field "people_" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.( ¹›w
+o	java:S116Ÿ"YRename this field "peopleBuilder_" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(çĞ«†
+h
+java:S3252ø"QUse static access with "com.google.protobuf.AbstractMessage" for "BuilderParent".(ÔÈı¾
+Z
+java:S1854´"CRemove this useless assignment to local variable "from_bitField0_".(ÆÓ¡€
+D
+java:S1172³"-Remove this unused method parameter "result".(¦îëº
+K
+java:S1481´"4Remove this unused "from_bitField0_" local variable.(ÆÓ¡€
+g
+java:S6201¹"PReplace this instanceof check and cast with 'instanceof AddressBook addressbook'(àŠ˜Í
+n
+java:S3776Á"RRefactor this method to reduce its Cognitive Complexity from 19 to the 15 allowed.(Åí­Îüÿÿÿÿ
+W	java:S125Š"<This block of commented-out lines of code should be removed.(““ùûÿÿÿÿ
+R	java:S125‹"<This block of commented-out lines of code should be removed.(¯Ë¶‡
+@
+java:S1940˜")Use the opposite operator ("==") instead.(¦ÁÕ“
+I
+java:S6126Ğ"2Replace this String concatenation with Text block.(õÊÍ‚

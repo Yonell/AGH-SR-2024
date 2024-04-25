@@ -1,0 +1,31 @@
+
+o
+java:S22932"YReplace the type specification in this constructor call with the diamond operator ("<>").(§Í±ä
+m
+java:S1104"RMake number a static final constant or non-public and provide accessors if needed.(ŞÄù×ùÿÿÿÿ
+f
+java:S1104"PMake type a static final constant or non-public and provide accessors if needed.(ÁŒö”
+c
+java:S1104"MMake a a static final constant or non-public and provide accessors if needed.(‚ÈÂÉ
+h
+java:S1104"MMake b a static final constant or non-public and provide accessors if needed.(êòÍŒúÿÿÿÿ
+f
+java:S1104"PMake name a static final constant or non-public and provide accessors if needed.( şÍ¾
+i
+java:S1104 "NMake id a static final constant or non-public and provide accessors if needed.(ÍéÌ‘øÿÿÿÿ
+l
+java:S1104!"QMake email a static final constant or non-public and provide accessors if needed.(¾Æ†Ëıÿÿÿÿ
+h
+java:S1104""RMake phones a static final constant or non-public and provide accessors if needed.(È¬¢
+d
+java:S2095H"NUse try-with-resources or close this "FileOutputStream" in a "finally" clause.(•òşÍ
+f
+java:S2095I"PUse try-with-resources or close this "ObjectOutputStream" in a "finally" clause.(ºıõ
+2
+java:S1116
+"Remove this empty statement.(­Ûç‡
+9
+java:S1948""#Make "phones" private or transient.(È¬¢
+@	java:S106;"+Replace this use of System.out by a logger.(ô˜éá
+?	java:S106D"+Replace this use of System.out by a logger.(Ã–Ìe
+@	java:S106P"+Replace this use of System.out by a logger.(ıìç

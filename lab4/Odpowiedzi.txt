@@ -1,0 +1,47 @@
+Ice
+1. Done
+2. Done
+3. slice2cpp, slice2py
+4. Done
+5. Nazwy w generated pochodzą z tego pliku calculator.ice. Interface to Calc, więc dla servera plik to Calc, a dla clienta CalcPrx. A to struct, a NoInput to klasa exception. operation to enum.
+6. Done
+7. Słucha na 10000 TCP i UDP. netstat -aon | findstr 9128
+8. Done
+9.
+calcServant1 i calcServant2
+Udostępnia 2
+calc11, calc22
+Z calc11. Wynika to z komendy w IceClient
+ObjectPrx base1 = communicator.stringToProxy("calc/calc11:tcp -h 127.0.0.2 -p 10000 -z : udp -h 127.0.0.2 -p 10000 -z");
+com.zeroc.Ice.ObjectNotExistException
+10. Jest w stanie
+11. Działa
+12.
+Rozumie
+Żądanie - compression, object info, operacja, parametry. Odpowiedź - compression, result
+Ip serwera u klienta i interface servera, z którym się wiąże
+13. Działa
+14. Done
+15. Według dokumentacji przydaje się to runtimeowi, który jeśli tak zadeklarujemy funkcję w razie błędów może bardziej agresywnie wysyłać żądania (wiedząc, że nie zmienia to stanu aplikacji).
+16. Jest add2
+17. 	W tym konkretnym przypadku delay, zazwyczaj jednak odległość od servera i obliczenia servera.
+	Kiedy mamy co robić po drodze, albo kiedy chcemy prosić serwer o wiele rzeczy.
+	W niektórych przypadkach jak chcemy być pewni, że serwer dostał żądanie, to można poczekać. Jest to też trochę więcej kodu i bez sensu jest żądać, tylko po to, żeby joinować w kolejnej linijce.
+18. No działa szybciej
+19.	Jak nazwa wskazuje operacja oneway jest tylko w jedną stronę, więc do klienta nic nie wraca.
+	Funkcja musi chyba zwracać void i nie może wyrzucać wyjątków.
+	Klient mówi serwerowi co ma zrobić i nie czeka na zwrot danych. Jest mniej reliable
+20.	To samo co oneway tylko po udp. Jest jeszcze mniej reliable.
+21.	Wymogi te same co wcześniej, ice po prostu zbiera kilka wiadomości i wysyła je w batchach.
+22. Jest uncompressed i compressed. Zależy to od długości wiadomości.
+23. Rzeczywiście się łączy
+Thrift
+1./2./3./4./5. Done
+6. Done
+7. 33 bajty na add1a, Używa tcp
+8.	add1a
+ 	TCompactProtocol 	- 12B
+	TBinaryProtocol  	- 30B
+	TJSONProtocol		- 45B
+9. Startując więcej serwerów
+10. Dodając więcej usług do serwera

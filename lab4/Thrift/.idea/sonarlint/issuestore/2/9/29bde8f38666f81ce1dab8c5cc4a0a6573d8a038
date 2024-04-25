@@ -1,0 +1,8 @@
+
+@	java:S106"+Replace this use of System.out by a logger.(âãĞÆ
+y
+java:S2142"^Either re-interrupt this method or rethrow the "InterruptedException" that can be caught here.(Äí”úÿÿÿÿ
+C	java:S108")Either remove or fill this block of code.(Äí”úÿÿÿÿ
+@	java:S106"+Replace this use of System.out by a logger.(Ñõ¬–
+M
+java:S1135"2Complete the task associated to this TODO comment.(» æÿÿÿÿÿ

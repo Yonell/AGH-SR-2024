@@ -1,0 +1,47 @@
+
+g	java:S112!"FDefine and throw a dedicated exception instead of using a generic one.(ëİ£ÿÿÿÿÿ8…†¦®ñ1
+f
+java:S6208"CMerge the previous cases into this one using comma-separated label.(àä¨©şÿÿÿÿ8‡†¦®ñ1
+g
+java:S11922"JDefine a constant instead of duplicating this literal "RESULT = " 6 times.(ñ±¾Ø8ˆ†¦®ñ1
+h
+java:S1192A"LDefine a constant instead of duplicating this literal "ala ma kota" 4 times.(¦÷D8‰†¦®ñ1
+W
+java:S1141,"5Extract this nested try block into a separate method.(¡»¢üùÿÿÿÿ8Š†¦®ñ1
+^
+java:S2259f"AA "NullPointerException" could be thrown; "cfl" is nullable here.(í—Ş¸8ƒ¥§®ñ1
+n
+java:S1128"QRemove this unnecessary import: java.lang classes are always implicitly imported.(®ş±Ã8ö¦®ñ1
+o
+java:S3776"RRefactor this method to reduce its Cognitive Complexity from 20 to the 15 allowed.(Çµí‘8ü¦®ñ1
+W	java:S125"<This block of commented-out lines of code should be removed.(¦Áü!8Œ¦®ñ1
+L	java:S106-"+Replace this use of System.out by a logger.(­ÏÄ·øÿÿÿÿ8˜¦®ñ1
+G	java:S1062"+Replace this use of System.out by a logger.(ñ±¾Ø8œ¦®ñ1
+G	java:S1066"+Replace this use of System.out by a logger.(ñ±¾Ø8¦®ñ1
+G	java:S106:"+Replace this use of System.out by a logger.(ñ±¾Ø8Ÿ¦®ñ1
+G	java:S106>"+Replace this use of System.out by a logger.(ñ±¾Ø8¡¦®ñ1
+G	java:S106C"+Replace this use of System.out by a logger.(Ñõ¬–8£¦®ñ1
+G	java:S106H"+Replace this use of System.out by a logger.(Ñõ¬–8¥¦®ñ1
+G	java:S106M"+Replace this use of System.out by a logger.(Ñõ¬–8§¦®ñ1
+G	java:S106R"+Replace this use of System.out by a logger.(É¿ãŸ8©¦®ñ1
+G	java:S106S"+Replace this use of System.out by a logger.(Ñõ¬–8ª¦®ñ1
+G	java:S106Z"+Replace this use of System.out by a logger.(ñ±¾Ø8¯¦®ñ1
+G	java:S106`"+Replace this use of System.out by a logger.(»“à§8±¦®ñ1
+G	java:S106g"+Replace this use of System.out by a logger.(ñ±¾Ø8³¦®ñ1
+G	java:S106n"+Replace this use of System.out by a logger.(Ñõ¬–8Ã¦®ñ1
+L	java:S106t"+Replace this use of System.out by a logger.(şÅñÒÿÿÿÿÿ8Æ¦®ñ1
+G	java:S106w"+Replace this use of System.out by a logger.(Ñõ¬–8Ç¦®ñ1
+L	java:S106~"+Replace this use of System.out by a logger.(¦‡É‹ÿÿÿÿÿ8É¦®ñ1
+M	java:S106‚"+Replace this use of System.out by a logger.(“ğÊŒøÿÿÿÿ8Ê¦®ñ1
+H	java:S106‡"+Replace this use of System.out by a logger.(»¢¸ 8Ë¦®ñ1
+M	java:S106‹"+Replace this use of System.out by a logger.(©¹±€şÿÿÿÿ8Í¦®ñ1
+H	java:S106"+Replace this use of System.out by a logger.(›€–€8Î¦®ñ1
+H	java:S106“"+Replace this use of System.out by a logger.(ôÆ¯8Ï¦®ñ1
+M	java:S106—"+Replace this use of System.out by a logger.(§½ÁÂıÿÿÿÿ8Ğ¦®ñ1
+H	java:S106›"+Replace this use of System.out by a logger.(´§‡8Ñ¦®ñ1
+H	java:S106¡"+Replace this use of System.out by a logger.(åÓ¡ñ8Ò¦®ñ1
+H	java:S106¤"+Replace this use of System.err by a logger.(Ç¡«…8Ó¦®ñ1
+M	java:S106®"+Replace this use of System.err by a logger.(ïù¯¯ûÿÿÿÿ8Ö¦®ñ1
+M	java:S106µ"+Replace this use of System.err by a logger.(ïù¯¯ûÿÿÿÿ8Ø¦®ñ1
+ä
+java:S6541"ÆA "Brain Method" was detected. Refactor it to reduce at least one of the following metrics: LOC from 148 to 64, Complexity from 31 to 14, Nesting Level from 6 to 2, Number of Variables from 24 to 6.(Çµí‘8Ü¦®ñ1

@@ -1,0 +1,61 @@
+
+n
+java:S2293A"YReplace the type specification in this constructor call with the diamond operator ("<>").(ÿÏşZ
+o
+java:S2293B"YReplace the type specification in this constructor call with the diamond operator ("<>").(¿†í¨
+t
+java:S2293C"YReplace the type specification in this constructor call with the diamond operator ("<>").(ê¢íºùÿÿÿÿ
+n
+java:S2293\"YReplace the type specification in this constructor call with the diamond operator ("<>").(ÿÏşZ
+o
+java:S2293]"YReplace the type specification in this constructor call with the diamond operator ("<>").(¿†í¨
+t
+java:S2293^"YReplace the type specification in this constructor call with the diamond operator ("<>").(ê¢íºùÿÿÿÿ
+t
+java:S2293_"YReplace the type specification in this constructor call with the diamond operator ("<>").(¨ªÎÆùÿÿÿÿ
+C
+java:S1604*"(Make this anonymous inner class a lambda(ªú¯şÿÿÿÿ
+>
+java:S1604/"(Make this anonymous inner class a lambda(áµí¢
+h
+java:S2095a"KUse try-with-resources or close this "TServerSocket" in a "finally" clause.(µÊØÅ8ø’¯ñ1
+h
+java:S2095E"KUse try-with-resources or close this "TServerSocket" in a "finally" clause.(¡¸»8ÑØ¥¯ñ1
+]	java:S125H"<This block of commented-out lines of code should be removed.(Æ‰·šıÿÿÿÿ8Çø’¯ñ1
+@	java:S106O"+Replace this use of System.out by a logger.(åÚœˆ
+]	java:S125d"<This block of commented-out lines of code should be removed.(Æ‰·šıÿÿÿÿ8òØ¥¯ñ1
+E	java:S106o"+Replace this use of System.out by a logger.(¶ÔÃÙúÿÿÿÿ
+V
+java:S1128"9Remove this unused import 'org.apache.thrift.TProcessor'.(“›À8øØ¥¯ñ1
+e
+java:S1128"HRemove this unused import 'org.apache.thrift.protocol.TCompactProtocol'.(•åŸ†8øØ¥¯ñ1
+b
+java:S1128"ERemove this unused import 'org.apache.thrift.protocol.TJSONProtocol'.(Áãğ€8øØ¥¯ñ1
+i
+java:S1128"LRemove this unused import 'org.apache.thrift.protocol.TMultiplexedProtocol'.(˜•™8øØ¥¯ñ1
+^
+java:S1128	"ARemove this unused import 'org.apache.thrift.protocol.TProtocol'.(º‰8ùØ¥¯ñ1
+`
+java:S1128"CRemove this unused import 'org.apache.thrift.server.ServerContext'.(ëÂİé8úØ¥¯ñ1
+j
+java:S1128"HRemove this unused import 'org.apache.thrift.server.TNonblockingServer'.(¥ä…îüÿÿÿÿ8úØ¥¯ñ1
+k
+java:S1128"IRemove this unused import 'org.apache.thrift.server.TServerEventHandler'.(‰ó‡Úúÿÿÿÿ8úØ¥¯ñ1
+d
+java:S1128"GRemove this unused import 'org.apache.thrift.server.TThreadPoolServer'.(ÂîÂ½8úØ¥¯ñ1
+j
+java:S1128"MRemove this unused import 'org.apache.thrift.server.TThreadedSelectorServer'.(½´Æ×8úØ¥¯ñ1
+s
+java:S1128"QRemove this unused import 'org.apache.thrift.transport.TNonblockingServerSocket'.(¡ôãÂûÿÿÿÿ8úØ¥¯ñ1
+q
+java:S1128"TRemove this unused import 'org.apache.thrift.transport.TNonblockingServerTransport'.(³£ÏÔ8úØ¥¯ñ1
+o
+java:S1128"MRemove this unused import 'org.apache.thrift.transport.TSSLTransportFactory'.(´ÒÚùÿÿÿÿ8úØ¥¯ñ1
+`
+java:S1128"CRemove this unused import 'org.apache.thrift.transport.TTransport'.(ÀâŒß8úØ¥¯ñ1
+i
+java:S1128"LRemove this unused import 'org.apache.thrift.transport.TTransportException'.(Úüñ8úØ¥¯ñ1
+l
+java:S1128"JRemove this unused import 'org.apache.thrift.transport.TTransportFactory'.(ĞõÔûÿÿÿÿ8úØ¥¯ñ1
+‚
+java:S1128"eRemove this unused import 'org.apache.thrift.transport.TSSLTransportFactory.TSSLTransportParameters'.(ÅõıÃ8úØ¥¯ñ1

@@ -1,0 +1,18 @@
+
+r	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ô‰ôõûÿÿÿÿ8âÌÜ¬ñ1
+m	java:S117""QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(œóêÒ8ãÌÜ¬ñ1
+\
+java:S2184"@Cast one of the operands of this addition operation to a "long".(ÓˆŒR8åÌÜ¬ñ1
+e
+java:S2184%"CCast one of the operands of this subtraction operation to a "long".(è¤³´ûÿÿÿÿ8åÌÜ¬ñ1
+G	java:S106"+Replace this use of System.out by a logger.(‚ÒÖŠ8‰ÍÜ¬ñ1
+G	java:S106"+Replace this use of System.out by a logger.( áôÍ8ŠÍÜ¬ñ1
+`
+java:S1155">Use isEmpty() to check whether the collection is empty or not.(à©Óøùÿÿÿÿ8ŒÍÜ¬ñ1
+L	java:S106"+Replace this use of System.out by a logger.(óÇĞñùÿÿÿÿ8ŒÍÜ¬ñ1
+G	java:S106#"+Replace this use of System.out by a logger.(‚ÒÖŠ8ÍÜ¬ñ1
+L	java:S106$"+Replace this use of System.out by a logger.(ë›®úÿÿÿÿ8ÍÜ¬ñ1
+L	java:S106+"+Replace this use of System.out by a logger.(¼äÌŸøÿÿÿÿ8’ÍÜ¬ñ1
+G	java:S106,"+Replace this use of System.out by a logger.(¯Ç€ã8’ÍÜ¬ñ1
+F
+java:S1128")Remove this unused import 'Demo.NoInput'.(œû…ò8¥ã‹­ñ1

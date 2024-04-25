@@ -1,0 +1,12 @@
+
+[
+java:S2789I"FEnsure this "Optional" could never be null and remove this null-check.(òìá 
+t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(æåÑ©úÿÿÿÿ
+f	java:S116m"QRename this field "_value" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Í»“ü
+<	java:S131""Add a default case to this switch.(˜Õüüÿÿÿÿÿ
+c	java:S1000"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Çùõ‘
+h	java:S1005"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(§é´ðþÿÿÿÿ
+c	java:S100A"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(õœóò
+c	java:S100G"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÕÌûž
+h	java:S100O"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(§Õˆ£ûÿÿÿÿ
+c	java:S100W"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(­ËšŒ

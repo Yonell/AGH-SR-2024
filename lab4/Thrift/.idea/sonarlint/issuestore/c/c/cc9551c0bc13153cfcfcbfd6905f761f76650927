@@ -1,0 +1,37 @@
+
+{
+java:S2293|"YReplace the type specification in this constructor call with the diamond operator ("<>").(­³Ãúûÿÿÿÿ8ÃÍè®ñ1
+w
+java:S2293"YReplace the type specification in this constructor call with the diamond operator ("<>").(ë½»8ÄÍè®ñ1
+i
+java:S1192X"LDefine a constant instead of duplicating this literal ") returned " 5 times.(®¾»ô8ÅÍè®ñ1
+W
+java:S1141J"5Extract this nested try block into a separate method.(ç£êúÿÿÿÿ8ÆÍè®ñ1
+c
+java:S2259e"FA "NullPointerException" could be thrown; "synCalc2" is nullable here.(ë™Á8Ç‚ˆ¯ñ1
+o
+java:S3776"RRefactor this method to reduce its Cognitive Complexity from 18 to the 15 allowed.(ÛÛ¯ø8çÍè®ñ1
+^
+java:S18543"<Remove this useless assignment to local variable "synCalc1".(Âä’İúÿÿÿÿ8Ñè´¯ñ1
+G	java:S106)"+Replace this use of System.out by a logger.(Àƒº8†Îè®ñ1
+]	java:S1250"<This block of commented-out lines of code should be removed.(ÕêºÚşÿÿÿÿ8ÿ¸¯ñ1
+]	java:S125<"<This block of commented-out lines of code should be removed.(ÕêºÚşÿÿÿÿ8Ï”¦¯ñ1
+L	java:S106L"+Replace this use of System.out by a logger.(­ÏÄ·øÿÿÿÿ8œÎè®ñ1
+G	java:S106M"+Replace this use of System.out by a logger.(ÚÂâ8œÎè®ñ1
+G	java:S106X"+Replace this use of System.out by a logger.(®¾»ô8ŸÎè®ñ1
+G	java:S106_"+Replace this use of System.out by a logger.(®¾»ô8¢Îè®ñ1
+G	java:S106f"+Replace this use of System.out by a logger.(®¾»ô8£Îè®ñ1
+G	java:S106m"+Replace this use of System.out by a logger.(®¾»ô8¥Îè®ñ1
+L	java:S106x"+Replace this use of System.out by a logger.(Á¨İ¸ıÿÿÿÿ8¬Îè®ñ1
+L	java:S106}"+Replace this use of System.out by a logger.(Š™ıÿÿÿÿ8®Îè®ñ1
+H	java:S106‚"+Replace this use of System.out by a logger.(àË¦İ8°Îè®ñ1
+H	java:S106Š"+Replace this use of System.out by a logger.(åÓ¡ñ8²Îè®ñ1
+M	java:S106"+Replace this use of System.err by a logger.(°£Ö‹üÿÿÿÿ8²Îè®ñ1
+H	java:S106¡"+Replace this use of System.out by a logger.(¹Â‰8¹Îè®ñ1
+M	java:S106§"+Replace this use of System.out by a logger.(ã°ïñøÿÿÿÿ8½Îè®ñ1
+l
+java:S1128"JRemove this unused import 'sr.rpc.thrift.Calculator.AsyncClient.add_call'.(ÉŸ½•ùÿÿÿÿ8”ƒˆ¯ñ1
+e
+java:S1128"HRemove this unused import 'org.apache.thrift.protocol.TCompactProtocol'.(•åŸ†8â”¦¯ñ1
+b
+java:S1128"ERemove this unused import 'org.apache.thrift.protocol.TJSONProtocol'.(Áãğ€8É°£¯ñ1

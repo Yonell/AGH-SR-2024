@@ -1,0 +1,6 @@
+
+?	java:S106"+Replace this use of System.out by a logger.(²ö€
+y
+java:S2142"^Either re-interrupt this method or rethrow the "InterruptedException" that can be caught here.(éÛ•Öıÿÿÿÿ
+C	java:S108")Either remove or fill this block of code.(éÛ•Öıÿÿÿÿ
+@	java:S106"+Replace this use of System.out by a logger.(±Í¥
