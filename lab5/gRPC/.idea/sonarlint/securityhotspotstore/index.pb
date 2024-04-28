@@ -19,3 +19,13 @@ R
 +src/sr/serialization/JavaSerialization.java,c\9\c9b57b520736026df72e904c1d8bd185dcd2eb59
 \
 ,src/sr/serialization/ProtoSerialization.java,9\b\9b5413d8cda6ec340798ab90ac90392cb5a2ac3c
+T
+$gen/sr/grpc/gen/CalculatorProto.java,c\7\c7845f13587047da10b2818c05aebf19214c6b1e
+?
+streaming.proto,a\a\aa382648a36932cca4bcf1c50b04cbecfbdb5763
+[
++gen/sr/grpc/gen/AdvancedCalculatorGrpc.java,6\b\6b3b82cadd7746eb05a8c38d9b38d2644c5d6fca
+S
+#gen/sr/grpc/gen/CalculatorGrpc.java,b\7\b71337d053f9b9b2db10c912ad16a523509ecf8f
+^
+.src/sr/grpc/server/AdvancedCalculatorImpl.java,6\1\6180fc3cc7f7b44f10cca22f7860bb6ba2e1399a

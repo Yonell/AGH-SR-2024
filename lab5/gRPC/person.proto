@@ -22,6 +22,7 @@ message Person {
   }
 
   repeated PhoneNumber phones = 4;
+  repeated double incomes = 5;
 }
 
 message AddressBook {

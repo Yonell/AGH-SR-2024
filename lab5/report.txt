@@ -1,0 +1,45 @@
+<2.3.6 Done
+2.3.6 - java 478B, proto 89B
+	Przy 1000 serializacji, java 6s, proto <1s
+2.3.7 - Proto o wiele szybsze, i wykorzystuje koło 6 razy mniej bajtów
+2.3.8 - Proto nie posiada javowego syfu
+2.3.9 - raw wersja nie zna typów Javowych, wie tylko jakie są pola w proto
+2.3.10 - 	person1(Java) 	- 	stare:478B	nowe:618B
+		person2(Proto) 	- 	stare:89B	nowe:115B
+	Zwiększyło się na pewno o mnie niż w Javie
+2.4.1 - usług?
+2.4.2 - Done
+2.4.3 - Done
+2.4.4 - 	getServiceDescriptor z Supplier
+		getMethodDescriptor z Supplierh
+		getServiceDescriptor luźne
+2.4.5 - Done
+2.4.6 - HTTP2
+2.6.7 - 	request: 6B
+		response: 4B
+2.6.8 - Działa
+2.6.9 - Deadline działa, chyba serwerowy
+2.6.10 - Jest mul
+2.6.11 - Done
+2.4.12 - Done
+2.6.13 - Raczej upraszcza. Serwer nie zna klienta lokalnego IP
+		GRPC Message: /streaming.StreamTester/GeneratePrimeNumbers, Request
+		HTTP2	57	HEADERS[11]: 200 OK
+		GRPC Message: /streaming.StreamTester/GeneratePrimeNumbers, Response
+		...
+		...
+		GRPC Message: /streaming.StreamTester/GeneratePrimeNumbers, Response
+		GRPC Message: /streaming.StreamTester/GeneratePrimeNumbers, Response + End Stream: True in HTTP2
+2.6.14 - Klient i tak zna adres IP serwera, a nat nie broni przed ruchem wychodzącym, więc whatever.
+2.6.15 - 	No.	Time	Source	Destination	Protocol	Length	Info
+		5	3.667878	127.0.0.1	127.0.0.5	HTTP2	192	HEADERS[23], HEADERS[25], HEADERS[27], HEADERS[29], DATA[23], DATA[27], DATA[25]
+		7	3.673499	127.0.0.1	127.0.0.5	HTTP2	216	HEADERS[31], HEADERS[33], HEADERS[35], HEADERS[37], HEADERS[39], HEADERS[41], DATA[29], DATA[41]
+		9	3.674486	127.0.0.1	127.0.0.5	HTTP2	144	DATA[39], DATA[37], DATA[35], DATA[33], DATA[31]
+		11	8.681410	127.0.0.5	127.0.0.1	HTTP2	154	HEADERS[23]: 200 OK, HEADERS[25]: 200 OK, HEADERS[27]: 200 OK, DATA[25], HEADERS[25], DATA[27], HEADERS[27], DATA[23]
+		13	8.682699	127.0.0.5	127.0.0.1	HTTP2	54	HEADERS[23]
+		15	8.693839	127.0.0.5	127.0.0.1	HTTP2	153	HEADERS[37]: 200 OK, HEADERS[41]: 200 OK, HEADERS[39]: 200 OK, HEADERS[35]: 200 OK, HEADERS[29]: 200 OK, DATA[37], HEADERS[37], DATA[35]
+		17	8.694567	127.0.0.5	127.0.0.1	HTTP2	108	HEADERS[35], DATA[39], HEADERS[39], DATA[41], HEADERS[41]
+		19	8.696983	127.0.0.5	127.0.0.1	HTTP2	151	HEADERS[31]: 200 OK, HEADERS[33]: 200 OK, DATA[29], HEADERS[29], DATA[31], HEADERS[31], DATA[33], HEADERS[33]
+2.4.16 - 	Oba wysyłają
+		Żeby routery po drodze nie zamykały połączeń i żeby sprawdzać, czy połączenie jest dobre.
+2.4.17 - Działa

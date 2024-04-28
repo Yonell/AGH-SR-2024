@@ -92,7 +92,7 @@ public class grpcClient
 
 	public static void main(String[] args) throws Exception 
 	{
-		grpcClient client = new grpcClient("127.0.0.5", 50051);
+		grpcClient client = new grpcClient("127.0.0.5", 8080);
 		client.test();
 	}
 
@@ -122,6 +122,12 @@ public class grpcClient
 					case "add2": {
 						ArithmeticOpArguments request = ArithmeticOpArguments.newBuilder().setArg1(4444).setArg2(5555).build();
 						ArithmeticOpResult result = calcBlockingStub.add(request);
+						System.out.println(result.getRes());
+						break;
+					}
+					case "mul": {
+						ArithmeticMulArguments request = ArithmeticMulArguments.newBuilder().addAllArg(Arrays.asList(4,5,6)).build();
+						ArithmeticOpResult result = calcBlockingStub.multiply(request);
 						System.out.println(result.getRes());
 						break;
 					}
@@ -177,6 +183,28 @@ public class grpcClient
 							}
 						};
 						calcNonBlockingStub.add(request, responseObserver);
+						break;
+					}
+					case "nonblock-add-multiple": {
+						ArithmeticOpArguments request = ArithmeticOpArguments.newBuilder().setArg1(4444).setArg2(5555).build();
+						StreamObserver<ArithmeticOpResult> responseObserver = new StreamObserver<ArithmeticOpResult>() {
+							@Override
+							public void onError(Throwable t) {
+								System.out.println("gRPC ERROR");
+							}
+
+							@Override
+							public void onCompleted() {
+							}
+
+							@Override
+							public void onNext(ArithmeticOpResult res) {
+								System.out.println(res.getRes() + " (non-block)");
+							}
+						};
+						for (int i = 0; i < 10; i++){
+						calcNonBlockingStub.add(request, responseObserver);
+					}
 						break;
 					}
 					case "future-add-1": {

@@ -3,6 +3,8 @@ package sr.grpc.server;
 import sr.grpc.gen.ArithmeticOpResult;
 import sr.grpc.gen.CalculatorGrpc.CalculatorImplBase;
 
+import java.util.List;
+
 public class CalculatorImpl extends CalculatorImplBase 
 {
 	@Override
@@ -23,6 +25,20 @@ public class CalculatorImpl extends CalculatorImplBase
 	{
 		System.out.println("subtractRequest (" + request.getArg1() + ", " + request.getArg2() +")");
 		int val = request.getArg1() - request.getArg2();
+		ArithmeticOpResult result = ArithmeticOpResult.newBuilder().setRes(val).build();
+		responseObserver.onNext(result);
+		responseObserver.onCompleted();
+	}
+
+	@Override
+	public void multiply(sr.grpc.gen.ArithmeticMulArguments request,
+			io.grpc.stub.StreamObserver<sr.grpc.gen.ArithmeticOpResult> responseObserver)
+	{
+		List<Integer> arr = request.getArgList();
+
+		System.out.println("multiplyRequest (" + arr + ")");
+		int val = 1;
+		for (int i = 0; i < arr.size(); i++) val *= arr.get(i);
 		ArithmeticOpResult result = ArithmeticOpResult.newBuilder().setRes(val).build();
 		responseObserver.onNext(result);
 		responseObserver.onCompleted();

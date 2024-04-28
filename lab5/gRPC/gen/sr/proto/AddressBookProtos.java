@@ -81,6 +81,23 @@ public final class AddressBookProtos {
      */
     sr.proto.AddressBookProtos.Person.PhoneNumberOrBuilder getPhonesOrBuilder(
         int index);
+
+    /**
+     * <code>repeated double incomes = 5;</code>
+     * @return A list containing the incomes.
+     */
+    java.util.List<java.lang.Double> getIncomesList();
+    /**
+     * <code>repeated double incomes = 5;</code>
+     * @return The count of incomes.
+     */
+    int getIncomesCount();
+    /**
+     * <code>repeated double incomes = 5;</code>
+     * @param index The index of the element to return.
+     * @return The incomes at the given index.
+     */
+    double getIncomes(int index);
   }
   /**
    * Protobuf type {@code tutorial.Person}
@@ -107,6 +124,7 @@ public final class AddressBookProtos {
       name_ = "";
       email_ = "";
       phones_ = java.util.Collections.emptyList();
+      incomes_ = emptyDoubleList();
     }
 
     public static final com.google.protobuf.Descriptors.Descriptor
@@ -993,6 +1011,36 @@ public final class AddressBookProtos {
       return phones_.get(index);
     }
 
+    public static final int INCOMES_FIELD_NUMBER = 5;
+    @SuppressWarnings("serial")
+    private com.google.protobuf.Internal.DoubleList incomes_ =
+        emptyDoubleList();
+    /**
+     * <code>repeated double incomes = 5;</code>
+     * @return A list containing the incomes.
+     */
+    @java.lang.Override
+    public java.util.List<java.lang.Double>
+        getIncomesList() {
+      return incomes_;
+    }
+    /**
+     * <code>repeated double incomes = 5;</code>
+     * @return The count of incomes.
+     */
+    public int getIncomesCount() {
+      return incomes_.size();
+    }
+    /**
+     * <code>repeated double incomes = 5;</code>
+     * @param index The index of the element to return.
+     * @return The incomes at the given index.
+     */
+    public double getIncomes(int index) {
+      return incomes_.getDouble(index);
+    }
+    private int incomesMemoizedSerializedSize = -1;
+
     private byte memoizedIsInitialized = -1;
     @java.lang.Override
     public final boolean isInitialized() {
@@ -1007,6 +1055,7 @@ public final class AddressBookProtos {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
+      getSerializedSize();
       if (!com.google.protobuf.GeneratedMessage.isStringEmpty(name_)) {
         com.google.protobuf.GeneratedMessage.writeString(output, 1, name_);
       }
@@ -1018,6 +1067,13 @@ public final class AddressBookProtos {
       }
       for (int i = 0; i < phones_.size(); i++) {
         output.writeMessage(4, phones_.get(i));
+      }
+      if (getIncomesList().size() > 0) {
+        output.writeUInt32NoTag(42);
+        output.writeUInt32NoTag(incomesMemoizedSerializedSize);
+      }
+      for (int i = 0; i < incomes_.size(); i++) {
+        output.writeDoubleNoTag(incomes_.getDouble(i));
       }
       getUnknownFields().writeTo(output);
     }
@@ -1042,6 +1098,17 @@ public final class AddressBookProtos {
         size += com.google.protobuf.CodedOutputStream
           .computeMessageSize(4, phones_.get(i));
       }
+      {
+        int dataSize = 0;
+        dataSize = 8 * getIncomesList().size();
+        size += dataSize;
+        if (!getIncomesList().isEmpty()) {
+          size += 1;
+          size += com.google.protobuf.CodedOutputStream
+              .computeInt32SizeNoTag(dataSize);
+        }
+        incomesMemoizedSerializedSize = dataSize;
+      }
       size += getUnknownFields().getSerializedSize();
       memoizedSize = size;
       return size;
@@ -1065,6 +1132,8 @@ public final class AddressBookProtos {
           .equals(other.getEmail())) return false;
       if (!getPhonesList()
           .equals(other.getPhonesList())) return false;
+      if (!getIncomesList()
+          .equals(other.getIncomesList())) return false;
       if (!getUnknownFields().equals(other.getUnknownFields())) return false;
       return true;
     }
@@ -1085,6 +1154,10 @@ public final class AddressBookProtos {
       if (getPhonesCount() > 0) {
         hash = (37 * hash) + PHONES_FIELD_NUMBER;
         hash = (53 * hash) + getPhonesList().hashCode();
+      }
+      if (getIncomesCount() > 0) {
+        hash = (37 * hash) + INCOMES_FIELD_NUMBER;
+        hash = (53 * hash) + getIncomesList().hashCode();
       }
       hash = (29 * hash) + getUnknownFields().hashCode();
       memoizedHashCode = hash;
@@ -1227,6 +1300,7 @@ public final class AddressBookProtos {
           phonesBuilder_.clear();
         }
         bitField0_ = (bitField0_ & ~0x00000008);
+        incomes_ = emptyDoubleList();
         return this;
       }
 
@@ -1282,6 +1356,10 @@ public final class AddressBookProtos {
         if (((from_bitField0_ & 0x00000004) != 0)) {
           result.email_ = email_;
         }
+        if (((from_bitField0_ & 0x00000010) != 0)) {
+          incomes_.makeImmutable();
+          result.incomes_ = incomes_;
+        }
       }
 
       @java.lang.Override
@@ -1334,6 +1412,17 @@ public final class AddressBookProtos {
               phonesBuilder_.addAllMessages(other.phones_);
             }
           }
+        }
+        if (!other.incomes_.isEmpty()) {
+          if (incomes_.isEmpty()) {
+            incomes_ = other.incomes_;
+            incomes_.makeImmutable();
+            bitField0_ |= 0x00000010;
+          } else {
+            ensureIncomesIsMutable();
+            incomes_.addAll(other.incomes_);
+          }
+          onChanged();
         }
         this.mergeUnknownFields(other.getUnknownFields());
         onChanged();
@@ -1389,6 +1478,23 @@ public final class AddressBookProtos {
                 }
                 break;
               } // case 34
+              case 41: {
+                double v = input.readDouble();
+                ensureIncomesIsMutable();
+                incomes_.addDouble(v);
+                break;
+              } // case 41
+              case 42: {
+                int length = input.readRawVarint32();
+                int limit = input.pushLimit(length);
+                int alloc = length > 4096 ? 4096 : length;
+                ensureIncomesIsMutable(alloc / 8);
+                while (input.getBytesUntilLimit() > 0) {
+                  incomes_.addDouble(input.readDouble());
+                }
+                input.popLimit(limit);
+                break;
+              } // case 42
               default: {
                 if (!super.parseUnknownField(input, extensionRegistry, tag)) {
                   done = true; // was an endgroup tag
@@ -1820,6 +1926,96 @@ public final class AddressBookProtos {
           phones_ = null;
         }
         return phonesBuilder_;
+      }
+
+      private com.google.protobuf.Internal.DoubleList incomes_ = emptyDoubleList();
+      private void ensureIncomesIsMutable() {
+        if (!incomes_.isModifiable()) {
+          incomes_ = makeMutableCopy(incomes_);
+        }
+        bitField0_ |= 0x00000010;
+      }
+      private void ensureIncomesIsMutable(int capacity) {
+        if (!incomes_.isModifiable()) {
+          incomes_ = makeMutableCopy(incomes_, capacity);
+        }
+        bitField0_ |= 0x00000010;
+      }
+      /**
+       * <code>repeated double incomes = 5;</code>
+       * @return A list containing the incomes.
+       */
+      public java.util.List<java.lang.Double>
+          getIncomesList() {
+        incomes_.makeImmutable();
+        return incomes_;
+      }
+      /**
+       * <code>repeated double incomes = 5;</code>
+       * @return The count of incomes.
+       */
+      public int getIncomesCount() {
+        return incomes_.size();
+      }
+      /**
+       * <code>repeated double incomes = 5;</code>
+       * @param index The index of the element to return.
+       * @return The incomes at the given index.
+       */
+      public double getIncomes(int index) {
+        return incomes_.getDouble(index);
+      }
+      /**
+       * <code>repeated double incomes = 5;</code>
+       * @param index The index to set the value at.
+       * @param value The incomes to set.
+       * @return This builder for chaining.
+       */
+      public Builder setIncomes(
+          int index, double value) {
+
+        ensureIncomesIsMutable();
+        incomes_.setDouble(index, value);
+        bitField0_ |= 0x00000010;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>repeated double incomes = 5;</code>
+       * @param value The incomes to add.
+       * @return This builder for chaining.
+       */
+      public Builder addIncomes(double value) {
+
+        ensureIncomesIsMutable();
+        incomes_.addDouble(value);
+        bitField0_ |= 0x00000010;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>repeated double incomes = 5;</code>
+       * @param values The incomes to add.
+       * @return This builder for chaining.
+       */
+      public Builder addAllIncomes(
+          java.lang.Iterable<? extends java.lang.Double> values) {
+        ensureIncomesIsMutable();
+        com.google.protobuf.AbstractMessageLite.Builder.addAll(
+            values, incomes_);
+        bitField0_ |= 0x00000010;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>repeated double incomes = 5;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearIncomes() {
+        incomes_ = emptyDoubleList();
+        bitField0_ = (bitField0_ & ~0x00000010);
+        onChanged();
+        return this;
       }
 
       // @@protoc_insertion_point(builder_scope:tutorial.Person)
@@ -2637,15 +2833,15 @@ public final class AddressBookProtos {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\014person.proto\022\010tutorial\"\325\001\n\006Person\022\014\n\004n" +
+      "\n\014person.proto\022\010tutorial\"\346\001\n\006Person\022\014\n\004n" +
       "ame\030\001 \001(\t\022\n\n\002id\030\002 \001(\005\022\r\n\005email\030\003 \001(\t\022,\n\006" +
       "phones\030\004 \003(\0132\034.tutorial.Person.PhoneNumb" +
-      "er\032G\n\013PhoneNumber\022\016\n\006number\030\001 \001(\t\022(\n\004typ" +
-      "e\030\002 \001(\0162\032.tutorial.Person.PhoneType\"+\n\tP" +
-      "honeType\022\n\n\006MOBILE\020\000\022\010\n\004HOME\020\001\022\010\n\004WORK\020\002" +
-      "\"/\n\013AddressBook\022 \n\006people\030\001 \003(\0132\020.tutori" +
-      "al.PersonB\035\n\010sr.protoB\021AddressBookProtos" +
-      "b\006proto3"
+      "er\022\017\n\007incomes\030\005 \003(\001\032G\n\013PhoneNumber\022\016\n\006nu" +
+      "mber\030\001 \001(\t\022(\n\004type\030\002 \001(\0162\032.tutorial.Pers" +
+      "on.PhoneType\"+\n\tPhoneType\022\n\n\006MOBILE\020\000\022\010\n" +
+      "\004HOME\020\001\022\010\n\004WORK\020\002\"/\n\013AddressBook\022 \n\006peop" +
+      "le\030\001 \003(\0132\020.tutorial.PersonB\035\n\010sr.protoB\021" +
+      "AddressBookProtosb\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -2656,7 +2852,7 @@ public final class AddressBookProtos {
     internal_static_tutorial_Person_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessage.FieldAccessorTable(
         internal_static_tutorial_Person_descriptor,
-        new java.lang.String[] { "Name", "Id", "Email", "Phones", });
+        new java.lang.String[] { "Name", "Id", "Email", "Phones", "Incomes", });
     internal_static_tutorial_Person_PhoneNumber_descriptor =
       internal_static_tutorial_Person_descriptor.getNestedTypes().get(0);
     internal_static_tutorial_Person_PhoneNumber_fieldAccessorTable = new

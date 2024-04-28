@@ -34,11 +34,14 @@ public class ProtoSerialization {
 						      Person.PhoneNumber.newBuilder()
 						        .setNumber("+48-699-989-796")
 						        .setType(Person.PhoneType.MOBILE))
+				    .addIncomes(1000.0)
+						  .addIncomes(2000.0)
+						  .addIncomes(3000.0)
 				    .build();
 		
 		byte[] p1ser = null;
 
-		long n = 1000000;
+		long n = 1000;
         System.out.println("Performing proto serialization " + n + " times...");
         for(long i = 0; i < n; i++)
 		{

@@ -30,6 +30,11 @@ public final class CalculatorProto {
     com.google.protobuf.GeneratedMessage.FieldAccessorTable
       internal_static_calculator_ArithmeticOpArguments_fieldAccessorTable;
   static final com.google.protobuf.Descriptors.Descriptor
+    internal_static_calculator_ArithmeticMulArguments_descriptor;
+  static final 
+    com.google.protobuf.GeneratedMessage.FieldAccessorTable
+      internal_static_calculator_ArithmeticMulArguments_fieldAccessorTable;
+  static final com.google.protobuf.Descriptors.Descriptor
     internal_static_calculator_ArithmeticOpResult_descriptor;
   static final 
     com.google.protobuf.GeneratedMessage.FieldAccessorTable
@@ -55,21 +60,24 @@ public final class CalculatorProto {
     java.lang.String[] descriptorData = {
       "\n\020calculator.proto\022\ncalculator\"3\n\025Arithm" +
       "eticOpArguments\022\014\n\004arg1\030\001 \001(\005\022\014\n\004arg2\030\002 " +
-      "\001(\005\"!\n\022ArithmeticOpResult\022\013\n\003res\030\001 \001(\005\"W" +
-      "\n\034ComplexArithmeticOpArguments\022)\n\006optype" +
-      "\030\001 \001(\0162\031.calculator.OperationType\022\014\n\004arg" +
-      "s\030\002 \003(\001\"(\n\031ComplexArithmeticOpResult\022\013\n\003" +
-      "res\030\001 \001(\001*3\n\rOperationType\022\007\n\003SUM\020\000\022\007\n\003A" +
-      "VG\020\001\022\007\n\003MIN\020\002\022\007\n\003MAX\020\0032\251\001\n\nCalculator\022J\n" +
-      "\003Add\022!.calculator.ArithmeticOpArguments\032" +
-      "\036.calculator.ArithmeticOpResult\"\000\022O\n\010Sub" +
-      "tract\022!.calculator.ArithmeticOpArguments" +
-      "\032\036.calculator.ArithmeticOpResult\"\0002{\n\022Ad" +
-      "vancedCalculator\022e\n\020ComplexOperation\022(.c" +
-      "alculator.ComplexArithmeticOpArguments\032%" +
-      ".calculator.ComplexArithmeticOpResult\"\000B" +
-      " \n\013sr.grpc.genB\017CalculatorProtoP\001b\006proto" +
-      "3"
+      "\001(\005\"%\n\026ArithmeticMulArguments\022\013\n\003arg\030\001 \003" +
+      "(\005\"!\n\022ArithmeticOpResult\022\013\n\003res\030\001 \001(\005\"W\n" +
+      "\034ComplexArithmeticOpArguments\022)\n\006optype\030" +
+      "\001 \001(\0162\031.calculator.OperationType\022\014\n\004args" +
+      "\030\002 \003(\001\"(\n\031ComplexArithmeticOpResult\022\013\n\003r" +
+      "es\030\001 \001(\001*3\n\rOperationType\022\007\n\003SUM\020\000\022\007\n\003AV" +
+      "G\020\001\022\007\n\003MIN\020\002\022\007\n\003MAX\020\0032\373\001\n\nCalculator\022J\n\003" +
+      "Add\022!.calculator.ArithmeticOpArguments\032\036" +
+      ".calculator.ArithmeticOpResult\"\000\022O\n\010Subt" +
+      "ract\022!.calculator.ArithmeticOpArguments\032" +
+      "\036.calculator.ArithmeticOpResult\"\000\022P\n\010Mul" +
+      "tiply\022\".calculator.ArithmeticMulArgument" +
+      "s\032\036.calculator.ArithmeticOpResult\"\0002{\n\022A" +
+      "dvancedCalculator\022e\n\020ComplexOperation\022(." +
+      "calculator.ComplexArithmeticOpArguments\032" +
+      "%.calculator.ComplexArithmeticOpResult\"\000" +
+      "B \n\013sr.grpc.genB\017CalculatorProtoP\001b\006prot" +
+      "o3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -81,20 +89,26 @@ public final class CalculatorProto {
       com.google.protobuf.GeneratedMessage.FieldAccessorTable(
         internal_static_calculator_ArithmeticOpArguments_descriptor,
         new java.lang.String[] { "Arg1", "Arg2", });
-    internal_static_calculator_ArithmeticOpResult_descriptor =
+    internal_static_calculator_ArithmeticMulArguments_descriptor =
       getDescriptor().getMessageTypes().get(1);
+    internal_static_calculator_ArithmeticMulArguments_fieldAccessorTable = new
+      com.google.protobuf.GeneratedMessage.FieldAccessorTable(
+        internal_static_calculator_ArithmeticMulArguments_descriptor,
+        new java.lang.String[] { "Arg", });
+    internal_static_calculator_ArithmeticOpResult_descriptor =
+      getDescriptor().getMessageTypes().get(2);
     internal_static_calculator_ArithmeticOpResult_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessage.FieldAccessorTable(
         internal_static_calculator_ArithmeticOpResult_descriptor,
         new java.lang.String[] { "Res", });
     internal_static_calculator_ComplexArithmeticOpArguments_descriptor =
-      getDescriptor().getMessageTypes().get(2);
+      getDescriptor().getMessageTypes().get(3);
     internal_static_calculator_ComplexArithmeticOpArguments_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessage.FieldAccessorTable(
         internal_static_calculator_ComplexArithmeticOpArguments_descriptor,
         new java.lang.String[] { "Optype", "Args", });
     internal_static_calculator_ComplexArithmeticOpResult_descriptor =
-      getDescriptor().getMessageTypes().get(3);
+      getDescriptor().getMessageTypes().get(4);
     internal_static_calculator_ComplexArithmeticOpResult_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessage.FieldAccessorTable(
         internal_static_calculator_ComplexArithmeticOpResult_descriptor,

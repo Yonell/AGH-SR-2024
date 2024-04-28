@@ -1,12 +1,6 @@
 
-d
-java:S20955"NUse try-with-resources or close this "FileOutputStream" in a "finally" clause.(‰ŠÑÎ
 M
 java:S1135"2Complete the task associated to this TODO comment.(ÕÌ®şÿÿÿÿ
-E	java:S106*"+Replace this use of System.out by a logger.(Ù¦¸ãüÿÿÿÿ
-?	java:S106/"+Replace this use of System.out by a logger.(Ã–Ìe
-E	java:S1062"+Replace this use of System.out by a logger.(éÌë÷ÿÿÿÿÿ
-T
-java:S1128">Remove this unused import 'java.nio.charset.StandardCharsets'.(ï˜ŞÛ
-H
-java:S1128"-Remove this unused import 'java.util.Arrays'.(î–˜Éüÿÿÿÿ
+E	java:S106-"+Replace this use of System.out by a logger.(Ù¦¸ãüÿÿÿÿ
+?	java:S1062"+Replace this use of System.out by a logger.(Ã–Ìe
+E	java:S1065"+Replace this use of System.out by a logger.(éÌë÷ÿÿÿÿÿ

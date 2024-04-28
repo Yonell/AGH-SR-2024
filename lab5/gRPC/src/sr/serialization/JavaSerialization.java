@@ -32,14 +32,16 @@ class PersonJ implements java.io.Serializable
 	public int id;
 	public String email;
 	public List<PhoneNumberJ> phones;
+	public List<Double> incomes;
 
-	public PersonJ(String name, int id, String email, List<PhoneNumberJ> phones) 
-    { 
-        this.name = name; 
-        this.id = id; 
-        this.email = email;
-        this.phones = phones;
-    } 
+	public PersonJ(String name, int id, String email, List<PhoneNumberJ> phones, List<Double> incomes)
+	{
+		this.name = name;
+		this.id = id;
+		this.email = email;
+		this.phones = phones;
+		this.incomes = incomes;
+	}
 
 } 
 
@@ -50,12 +52,16 @@ public class JavaSerialization
 		List<PhoneNumberJ> phones = new ArrayList<PhoneNumberJ>();
 		phones.add(new PhoneNumberJ("+48-12-555-4321", PhoneTypeJ.HOME));
 		phones.add(new PhoneNumberJ("+48-699-989-796", PhoneTypeJ.MOBILE));
+		List<Double> incomes = new ArrayList<Double>();
+		incomes.add(1000.0);
+		incomes.add(2000.0);
+		incomes.add(3000.0);
 		
-		PersonJ object = new PersonJ("Włodzimierz Wróblewski", 123456, "wrobel@poczta.com", phones);
+		PersonJ object = new PersonJ("Włodzimierz Wróblewski", 123456, "wrobel@poczta.com", phones, incomes);
 		
 		try
 		{    
-			long n = 1000000;
+			long n = 1000;
 	        System.out.println("Performing java serialization " + n + " times...");
 	        for(long i = 0; i< n; i++)
 	        {

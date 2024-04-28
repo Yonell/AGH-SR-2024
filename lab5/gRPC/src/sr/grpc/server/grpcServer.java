@@ -19,7 +19,7 @@ public class grpcServer
 	private static final Logger logger = Logger.getLogger(grpcServer.class.getName());
 
 	private String address = "127.0.0.5";
-	private int port = 50051;
+	private int port = 50052;
 	private Server server;
 
 	private SocketAddress socket;
@@ -31,11 +31,11 @@ public class grpcServer
 		try { socket = new InetSocketAddress(InetAddress.getByName(address), port);	} catch(UnknownHostException e) {};
 
 		//You will want to employ flow-control so that the queue doesn't blow up your memory. You can cast StreamObserver to CallStreamObserver to get flow-control API
-		server = ServerBuilder.forPort(50051).executor((Executors.newFixedThreadPool(16)))
+		server = ServerBuilder.forPort(port).executor((Executors.newFixedThreadPool(16)))
 				//NettyServerBuilder.forAddress(socket).executor(Executors.newFixedThreadPool(16))
 				.addService(new CalculatorImpl())
-				//.addService(new CalculatorImpl())
-				//.addService(new AdvancedCalculatorImpl())
+				.addService(new CalculatorImpl())
+				.addService(new AdvancedCalculatorImpl())
 				.addService(new StreamTesterImpl())
 				.build()
 				.start();

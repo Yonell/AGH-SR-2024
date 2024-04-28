@@ -1,6 +1,0 @@
-<2.3.6 Done
-2.3.6 - java 478B, proto 89B
-	Przy 1000 serializacji, java 6s, proto <1s
-2.3.7 - Proto o wiele szybsze, i wykorzystuje koło 6 razy mniej bajtów
-2.3.8 - Proto nie posiada javowego syfu
-2.3.9 - raw wersja nie zna typów Javowych, wie tylko jakie są pola w proto
