@@ -1,0 +1,16 @@
+
+Y
+java:S1854,"7Remove this useless assignment to local variable "rng".(‹Ûֻ«ûÿÿÿÿ8ִ־‎טפ1
+G	java:S106"+Replace this use of System.out by a logger.(ִן־®8§שתטפ1
+L	java:S106"+Replace this use of System.out by a logger.(ֳ÷¹רÿÿÿÿ8©שתטפ1
+L	java:S106""+Replace this use of System.out by a logger.(ֳ¦בüÿÿÿÿ8×שתטפ1
+G	java:S106$"+Replace this use of System.out by a logger.(ס׀™8«שתטפ1
+@
+java:S2119'"Save and re-use this "Random".(‹Ûֻ«ûÿÿÿÿ8­שתטפ1
+G	java:S106)"+Replace this use of System.out by a logger.(רג¡·8®שתטפ1
+@
+java:S2119,"Save and re-use this "Random".(‹Ûֻ«ûÿÿÿÿ8°שתטפ1
+J
+java:S1481,"(Remove this unused "rng" local variable.(‹Ûֻ«ûÿÿÿÿ8ׁ־‎טפ1
+L	java:S106-"+Replace this use of System.out by a logger.(—¥‘ֽ‏ÿÿÿÿ8±שתטפ1
+L	java:S1060"+Replace this use of System.out by a logger.(ƒ¼†שÿÿÿÿ8³שתטפ1

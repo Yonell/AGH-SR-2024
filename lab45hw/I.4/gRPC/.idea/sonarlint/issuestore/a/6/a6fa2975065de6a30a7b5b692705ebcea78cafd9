@@ -1,0 +1,12 @@
+
+G	java:S106"+Replace this use of System.out by a logger.(áËö8¸½¨èô1
+@
+java:S2119"Save and re-use this "Random".(‹ÛË«ûÿÿÿÿ8¼½¨èô1
+G	java:S106"+Replace this use of System.out by a logger.(³Ÿ¶‰8¾½¨èô1
+G	java:S106"+Replace this use of System.out by a logger.(óÙÃ8¿½¨èô1
+G	java:S106 "+Replace this use of System.out by a logger.(™æäõ8Á½¨èô1
+G	java:S106""+Replace this use of System.out by a logger.(‹Œ“Ã8Â½¨èô1
+R
+java:S1128"6Remove this unused import 'java.io.ObjectInputFilter'.(¾®ß,8İê¸éô1
+c
+java:S1128"ARemove this unused import 'com.google.protobuf.DescriptorProtos'.(§şıÖúÿÿÿÿ8İê¸éô1
