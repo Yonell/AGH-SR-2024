@@ -1,0 +1,37 @@
+
+v
+java:S22934"YReplace the type specification in this constructor call with the diamond operator ("<>").(§Í±ä8åÒŸÖñ1
+v
+java:S22937"YReplace the type specification in this constructor call with the diamond operator ("<>").(Äé£˜8‚¡Öñ1
+t
+java:S1104"RMake number a static final constant or non-public and provide accessors if needed.(ŞÄù×ùÿÿÿÿ8æÒŸÖñ1
+m
+java:S1104"PMake type a static final constant or non-public and provide accessors if needed.(ÁŒö”8çÒŸÖñ1
+j
+java:S1104"MMake a a static final constant or non-public and provide accessors if needed.(‚ÈÂÉ8çÒŸÖñ1
+o
+java:S1104"MMake b a static final constant or non-public and provide accessors if needed.(êòÍŒúÿÿÿÿ8çÒŸÖñ1
+m
+java:S1104"PMake name a static final constant or non-public and provide accessors if needed.( şÍ¾8çÒŸÖñ1
+p
+java:S1104 "NMake id a static final constant or non-public and provide accessors if needed.(ÍéÌ‘øÿÿÿÿ8çÒŸÖñ1
+s
+java:S1104!"QMake email a static final constant or non-public and provide accessors if needed.(¾Æ†Ëıÿÿÿÿ8çÒŸÖñ1
+o
+java:S1104""RMake phones a static final constant or non-public and provide accessors if needed.(È¬¢8çÒŸÖñ1
+u
+java:S1104#"SMake incomes a static final constant or non-public and provide accessors if needed.(úñèàøÿÿÿÿ8çÒŸÖñ1
+m
+java:S2095O"PUse try-with-resources or close this "ObjectOutputStream" in a "finally" clause.(ºıõ8×©¡Öñ1
+k
+java:S2095N"NUse try-with-resources or close this "FileOutputStream" in a "finally" clause.(•òşÍ8×©¡Öñ1
+9
+java:S1116
+"Remove this empty statement.(­Ûç‡8ğÒŸÖñ1
+@
+java:S1948""#Make "phones" private or transient.(È¬¢8øÒŸÖñ1
+F
+java:S1948#"$Make "incomes" private or transient.(úñèàøÿÿÿÿ8øÒŸÖñ1
+G	java:S106A"+Replace this use of System.out by a logger.(ô˜éá8ÓŸÖñ1
+F	java:S106J"+Replace this use of System.out by a logger.(Ã–Ìe8…ÓŸÖñ1
+G	java:S106V"+Replace this use of System.out by a logger.(ıìç8‰ÓŸÖñ1

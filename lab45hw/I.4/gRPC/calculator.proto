@@ -1,0 +1,20 @@
+
+syntax = "proto3";
+
+option java_multiple_files = true;
+option java_package = "sr.grpc.gen";
+option java_outer_classname = "CalculatorProto";
+
+package calculator;
+
+message m1 {
+  int32 val1 = 1;
+}
+
+message Empty {
+}
+
+service Config {
+  rpc test1 (Empty) returns (m1) {};
+  rpc test2 (m1) returns (Empty) {};
+}
