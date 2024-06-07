@@ -3,9 +3,9 @@ r	java:S117"QRename this local variable to match the regular expression '^[a-
 i	java:S101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(ׂרץÙ8פזהק1
 7
 java:S1220""Move this file to a named package.8צזהק1
-e
-java:S2095"HUse try-with-resources or close this "Connection" in a "finally" clause.(“…§Ú8Êזהק1
 g
 java:S2095"EUse try-with-resources or close this "Channel" in a "finally" clause.(‡מ‰´ûÿÿÿÿ8Êזהק1
+e
+java:S2095"HUse try-with-resources or close this "Connection" in a "finally" clause.(“…§Ú8Êזהק1
 F	java:S106"+Replace this use of System.out by a logger.(»ÿ58ױזהק1
 L	java:S106"+Replace this use of System.out by a logger.(¦ֵּ×üÿÿÿÿ8‚זהק1
